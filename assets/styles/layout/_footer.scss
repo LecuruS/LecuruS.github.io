@@ -1,0 +1,52 @@
+footer{
+    background-color: $color6;
+    .footer {
+        color: $color1;
+        height: 150px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        
+        .adresse{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media screen and (max-width:700px) {
+                font-size: 0.8rem;
+            }
+            @media screen and (max-width:500px) {
+                font-size: 0.6rem; 
+            }
+            
+            img{
+                padding: 10px;
+                width: 15%;
+                @media screen and (max-width:700px) {
+                    width: 30%;
+                }
+                @media screen and (max-width:500px) {
+                    width: 40%;  
+                }
+            }
+
+        }
+
+        .sources{
+
+        }
+
+        a{
+            color: $color1;
+            @media screen and (max-width:900px) {
+                font-size: 0.8rem;
+            }
+            @media screen and (max-width:500px) {
+                font-style: 0.7rem; 
+            }
+        }
+    }
+}

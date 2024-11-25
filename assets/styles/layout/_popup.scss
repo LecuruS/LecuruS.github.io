@@ -1,0 +1,42 @@
+.pop-up {
+    height: 200px;
+    text-align: left;
+    width: 700px;
+    padding: 20px;
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+    box-shadow: -5px 5px 20px 2px $color6;
+    border-radius: 15px 0 0 15px;
+    color: $color6;
+    position: absolute;
+    top: 15%;
+    left: 80%;
+    transform: translateX(350px);
+    
+    .pop-up-container{
+        position: relative;
+
+        i{
+            position: absolute;
+            right: 40px;
+            font-size: 1.2rem;
+            color: $color6;
+            cursor: pointer;
+        }
+    
+        
+        h4{
+            font-family: nunito;
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+        address{
+            font-family: nunito;
+            padding: 20px;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            line-height: 40px;
+        }
+    }
+
+
+}

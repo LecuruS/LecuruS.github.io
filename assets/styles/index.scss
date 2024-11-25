@@ -1,0 +1,27 @@
+@import "./pages/settings";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./pages/home";
+@import "./pages/Projets";
+@import "./pages/about";
+@import "./pages/contact";
+@import "./layout/nav";
+@import "./components/buttun";
+@import "./components/title";
+@import "./layout/popup";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Faustina;
+    letter-spacing: 2px;
+}
+
+
+
+body {
+    height: 100vh;
+}
