@@ -12,7 +12,6 @@ let lastScroll = 0;
 
 function Scroll() {
   window.addEventListener("scroll", () => {
-    console.log("coucou");
     if (window.scrollY < lastScroll) {
       nav.style.opacity = 1;
     } else {
@@ -29,17 +28,14 @@ function Scroll() {
       WebAnim.style.transform = "translateX(0)";
       WebAnim.style.opacity = 1;
     }
-    if (window.scrollY > 800 && window.scrollY < 1200) {
+    if (window.scrollY > 760 && window.scrollY < 1200) {
       LogoAnim.style.transform = "translateX(0)";
       LogoAnim.style.opacity = 1;
-    }
-
-    if (window.scrollY > 1200) {
+    } else if (window.scrollY > 1200) {
       anim.forEach((animAll) => {
         animAll.style.opacity = 1;
         animAll.style.transform = "translateX(0)";
         animAll.style.transition = "none";
-        console.log("yo");
       });
     }
   });
@@ -81,7 +77,7 @@ function clickEvent() {
 clickEvent();
 
 bouton.addEventListener("click", () => {
-  popup.style.transform = "translate(-50%)";
+  popup.style.transform = "translate(0)";
   popup.style.opacity = 1;
 });
 
