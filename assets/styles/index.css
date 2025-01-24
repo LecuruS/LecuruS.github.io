@@ -7,7 +7,7 @@ header {
 }
 @media screen and (max-width: 500px) {
   header {
-    height: 600px;
+    height: 500px;
   }
 }
 header section {
@@ -47,6 +47,7 @@ header section h1 {
 @media screen and (max-width: 500px) {
   header section h1 {
     font-size: 1.6rem;
+    margin-top: 20px;
   }
 }
 header section .buttun {
@@ -65,13 +66,13 @@ header section .buttun {
 @media screen and (max-width: 700px) {
   header section .buttun {
     font-size: 1rem;
-    width: 110px;
+    width: 130px;
   }
 }
 @media screen and (max-width: 500px) {
   header section .buttun {
     font-size: 0.8rem;
-    width: 100px;
+    width: 120px;
   }
 }
 
@@ -192,20 +193,6 @@ footer .footer a {
   margin: 40px auto;
   position: relative;
 }
-@media screen and (max-width: 400px) {
-  .mes-services .first-part {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
 .mes-services .first-part .first-child {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,6 +207,11 @@ footer .footer a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media screen and (max-width: 1100px) {
+  .mes-services .first-part .first-child img {
+    width: 60%;
+  }
 }
 @media screen and (max-width: 900px) {
   .mes-services .first-part .first-child img {
@@ -267,8 +259,8 @@ footer .footer a {
 }
 @media screen and (max-width: 400px) {
   .mes-services .first-part .first-child::after {
-    height: 90px;
-    width: 90px;
+    height: 100px;
+    width: 100px;
   }
 }
 .mes-services .webdesign {
@@ -287,7 +279,7 @@ footer .footer a {
           align-items: center;
   width: 80%;
   height: 250px;
-  margin: 5px 0 5px 50px;
+  margin: 5px 50px 5px 0px;
   border-radius: 0 30px 0 10px;
   background-image: linear-gradient(120deg, rgba(224, 195, 252, 0.6862745098) 0%, rgba(142, 197, 252, 0.6784313725) 100%);
   -webkit-box-shadow: -20px 20px 2px rgba(103, 61, 158, 0.8156862745);
@@ -296,7 +288,6 @@ footer .footer a {
   transition: 1.5s ease;
   -webkit-transform: translateX(-400px);
           transform: translateX(-400px);
-  opacity: 0;
   font-size: 1.3rem;
   font-weight: 600;
 }
@@ -311,7 +302,7 @@ footer .footer a {
 @media screen and (max-width: 900px) {
   .mes-services .webdesign #Webanim {
     font-size: 0.9rem;
-    height: 200px;
+    height: 180px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -326,12 +317,13 @@ footer .footer a {
     height: 100px;
     -webkit-box-shadow: -10px 10px 2px rgba(103, 61, 158, 0.8156862745);
             box-shadow: -10px 10px 2px rgba(103, 61, 158, 0.8156862745);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @media screen and (max-width: 400px) {
   .mes-services .webdesign #Webanim {
-    width: 100%;
-    margin: 0 0 30px 0;
+    margin: 5px 10px 5px 0;
   }
 }
 .mes-services .anim {
@@ -376,6 +368,9 @@ footer .footer a {
 @media screen and (max-width: 500px) {
   .mes-services .anim {
     font-size: 0.6rem;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
   }
 }
 .mes-services .anim img {
@@ -388,7 +383,7 @@ footer .footer a {
 }
 @media screen and (max-width: 900px) {
   .mes-services .anim {
-    height: 200px;
+    height: 180px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -400,8 +395,7 @@ footer .footer a {
 }
 @media screen and (max-width: 400px) {
   .mes-services .anim {
-    width: 100%;
-    margin: 30px 0 0 0;
+    margin: 20px 0 0 0;
   }
 }
 .mes-services button {
@@ -668,9 +662,30 @@ footer .footer a {
 .propos {
   background-color: #EACDC2;
   margin: 0 auto;
+  height: 800px;
+}
+@media screen and (max-width: 900px) {
+  .propos {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .propos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 600px;
+    margin: auto 0;
+  }
 }
 .propos .about {
-  height: 800px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -685,15 +700,15 @@ footer .footer a {
 }
 @media screen and (max-width: 500px) {
   .propos .about {
-    height: 600px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .propos .about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 100%;
+    margin: auto 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .propos .about .photo {
@@ -704,7 +719,7 @@ footer .footer a {
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .propos .about .photo {
     width: 80%;
     margin-bottom: 20px;
@@ -714,9 +729,9 @@ footer .footer a {
   width: 50%;
   color: #1A1423;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .propos .about .monologue {
-    width: 90%;
+    width: 100%;
     text-align: center;
   }
 }
@@ -763,11 +778,9 @@ footer .footer a {
   .propos .about .monologue p {
     font-size: 0.7rem;
     line-height: 19px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .propos .about .monologue p {
     text-align: center;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 .propos .about .monologue a {
@@ -802,7 +815,7 @@ nav {
 }
 @media screen and (max-width: 400px) {
   nav {
-    height: 140px;
+    height: 120px;
   }
 }
 nav div {
@@ -822,7 +835,7 @@ nav div {
 }
 @media screen and (max-width: 400px) {
   nav div {
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 15% 85%;
   }
 }
 nav div span {
@@ -889,7 +902,7 @@ nav div ul li a:hover {
 }
 @media screen and (max-width: 400px) {
   nav div ul li {
-    padding: 7px;
+    padding: 5px;
   }
 }
 nav div ul button a {
@@ -1010,6 +1023,17 @@ h2 {
   right: 0px;
   opacity: 0;
 }
+@media screen and (max-width: 900px) {
+  .pop-up {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .pop-up {
+    width: 300px;
+    height: 150px;
+  }
+}
 .pop-up .pop-up-container {
   position: relative;
 }
@@ -1020,10 +1044,31 @@ h2 {
   color: #1A1423;
   cursor: pointer;
 }
+@media screen and (max-width: 900px) {
+  .pop-up .pop-up-container i {
+    right: 5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .pop-up .pop-up-container i {
+    right: -10px;
+    font-size: 0.9rem;
+  }
+}
 .pop-up .pop-up-container h4 {
   font-family: nunito;
   font-size: 1.5rem;
   font-weight: 800;
+}
+@media screen and (max-width: 900px) {
+  .pop-up .pop-up-container h4 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .pop-up .pop-up-container h4 {
+    font-size: 0.8rem;
+  }
 }
 .pop-up .pop-up-container address {
   font-family: nunito;
@@ -1031,6 +1076,18 @@ h2 {
   letter-spacing: 2px;
   font-size: 1.5rem;
   line-height: 40px;
+}
+@media screen and (max-width: 900px) {
+  .pop-up .pop-up-container address {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .pop-up .pop-up-container address {
+    font-size: 0.8rem;
+    padding: 10px;
+    line-height: 22px;
+  }
 }
 
 * {
