@@ -838,16 +838,16 @@ nav div {
     grid-template-columns: 15% 85%;
   }
 }
-nav div span {
+nav div i {
   margin: 0 auto;
 }
-nav div span img {
+nav div i img {
   width: 60%;
   -webkit-transform: translate(50%);
           transform: translate(50%);
 }
 @media screen and (max-width: 700px) {
-  nav div span img {
+  nav div i img {
     width: 80%;
   }
 }
@@ -911,69 +911,6 @@ nav div ul button a {
 }
 nav div ul button:hover {
   scale: 2rem;
-}
-
-.buttun {
-  padding: 5px 20px;
-  border-radius: 8px;
-  color: whitesmoke;
-  cursor: pointer;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.288);
-  background-color: rgb(0, 104, 0);
-  font-size: 1.2rem;
-  font-weight: 700;
-  font-family: nunito;
-  border: none;
-  text-decoration: none;
-}
-@media screen and (max-width: 900px) {
-  .buttun {
-    font-size: 1rem;
-    padding: 5px 10px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .buttun {
-    font-size: 0.8rem;
-  }
-}
-.buttun:hover {
-  scale: 1.1;
-  color: #2F195F;
-}
-
-.bouton {
-  padding: 5px 20px;
-  border-radius: 8px;
-  color: whitesmoke;
-  background-color: #774C60;
-  cursor: pointer;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.288);
-  font-size: 1.2rem;
-  font-weight: 700;
-  font-family: nunito;
-  border: none;
-}
-@media screen and (max-width: 900px) {
-  .bouton {
-    font-size: 1rem;
-    padding: 5px 10px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .bouton {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (max-width: 500px) {
-  .bouton {
-    font-size: 0.7rem;
-    padding: 3px 7px;
-  }
-}
-.bouton:hover {
-  scale: 1.1;
-  color: #2F195F;
 }
 
 h2 {
@@ -1088,6 +1025,271 @@ h2 {
     padding: 10px;
     line-height: 22px;
   }
+}
+
+.Graphisme {
+  height: 2100px;
+  background-color: #1A1423;
+}
+.Graphisme .top_line {
+  height: 100px;
+  background-color: #1A1423;
+}
+.Graphisme .logo_projets {
+  margin: 20px 0 20px 0;
+  border: 2px solid whitesmoke;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+.Graphisme .logo_projets .partie1 {
+  padding: 20px 0 20px 0;
+}
+.Graphisme .logo_projets .partie1 h3 {
+  color: whitesmoke;
+  font-size: 2.5rem;
+}
+.Graphisme .logo_projets .partie2 {
+  padding: 20px 40px 20px 40px;
+  background-color: #2c3968;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.Graphisme .logo_projets .partie2 img {
+  border: 1px solid #EACDC2;
+  cursor: pointer;
+  width: 170px;
+  padding: 10px;
+}
+@media screen and (max-width: 1400px) {
+  .Graphisme .logo_projets .partie2 img {
+    width: 140px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .Graphisme .logo_projets .partie2 img {
+    width: 130px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Graphisme .logo_projets .partie2 img {
+    width: 120px;
+  }
+}
+.Graphisme .mockup_projets {
+  margin: 20px 0 20px 0;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  border: 2px solid whitesmoke;
+}
+.Graphisme .mockup_projets .mock_part2 {
+  padding: 20px 40px 20px 40px;
+  background-color: #2c3968;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+.Graphisme .mockup_projets .mock_part2 img {
+  cursor: pointer;
+  width: 170px;
+  padding: 10px;
+  border: 1px solid #EACDC2;
+}
+.Graphisme .mockup_projets .mock_part1 {
+  padding: 20px 0 20px 0;
+}
+.Graphisme .mockup_projets .mock_part1 h3 {
+  color: whitesmoke;
+  font-size: 2.5rem;
+}
+.Graphisme .flyers_projets {
+  margin: 20px 0 20px 0;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  border: 2px solid whitesmoke;
+}
+.Graphisme .flyers_projets .flyers_part1 {
+  padding: 20px 0 20px 0;
+}
+.Graphisme .flyers_projets .flyers_part1 h3 {
+  color: whitesmoke;
+  font-size: 2.5rem;
+}
+.Graphisme .flyers_projets .flyers_part2 {
+  padding: 20px 40px 20px 40px;
+  background-color: #2c3968;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.Graphisme .flyers_projets .flyers_part2 img {
+  height: 350px;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #EACDC2;
+}
+.Graphisme .clic_scale {
+  position: relative;
+}
+.Graphisme .Projet_ecole {
+  margin: 20px 0 20px 0;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  border: 2px solid whitesmoke;
+}
+.Graphisme .Projet_ecole .ecole_part1 {
+  padding: 20px 40px 20px 40px;
+  background-color: #2c3968;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+.Graphisme .Projet_ecole .ecole_part1 img {
+  cursor: pointer;
+  height: 650px;
+  padding: 10px;
+  border: 1px solid #EACDC2;
+}
+.Graphisme .Projet_ecole .ecole_part2 h3 {
+  color: whitesmoke;
+  font-size: 2.5rem;
+}
+.Graphisme .bot_line {
+  height: 100px;
+  background-color: #1A1423;
+}
+
+.buttun {
+  padding: 5px 20px;
+  border-radius: 8px;
+  color: whitesmoke;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.288);
+  background-color: rgb(0, 104, 0);
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: nunito;
+  border: none;
+  text-decoration: none;
+}
+@media screen and (max-width: 900px) {
+  .buttun {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .buttun {
+    font-size: 0.8rem;
+  }
+}
+.buttun:hover {
+  scale: 1.1;
+  color: #2F195F;
+}
+
+.bouton {
+  padding: 5px 20px;
+  border-radius: 8px;
+  color: whitesmoke;
+  background-color: #774C60;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.288);
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: nunito;
+  border: none;
+}
+@media screen and (max-width: 900px) {
+  .bouton {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .bouton {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .bouton {
+    font-size: 0.7rem;
+    padding: 3px 7px;
+  }
+}
+.bouton:hover {
+  scale: 1.1;
+  color: #2F195F;
+}
+
+.close {
+  position: absolute;
+  background: rgb(168, 5, 5);
+  color: whitesmoke;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  z-index: 10000;
 }
 
 * {

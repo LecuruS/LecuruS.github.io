@@ -8,6 +8,9 @@ const moves = document.querySelectorAll(".move");
 const popup = document.querySelector(".pop-up");
 const close = document.getElementById("closeBtn");
 const bouton = document.querySelector(".bouton");
+const clics = document.querySelectorAll(".clic_scale");
+let activeClic = null;
+let activeCroix = null;
 let lastScroll = 0;
 
 function Scroll() {
@@ -41,6 +44,48 @@ function Scroll() {
   });
 }
 Scroll();
+function handleClick() {
+  clics.forEach((clic) => {
+    clic.addEventListener("click", () => {
+      if (activeClic && activeClic !== clic) {
+        activeClic.style.transform = "scale(1)";
+        activeClic.style.zIndex = "1";
+        if (activeCroix) activeCroix.remove();
+      }
+      if (activeClic === clic) {
+        activeClic.style.transform = "scale(1)";
+        activeClic.style.zIndex = "1";
+        if (activeCroix) activeCroix.remove();
+        activeClic = null;
+        activeCroix = null;
+        return;
+      }
+
+      clic.style.transform = "scale(2.5)";
+      clic.style.zIndex = "1000";
+      let croix = document.createElement("span");
+      croix.innerHTML = "&#x274C;";
+      croix.classList.add("close");
+      document.body.appendChild(croix);
+
+      let rect = clic.getBoundingClientRect();
+      croix.style.top = `${rect.top + window.scrollY + 10}px`;
+      croix.style.left = `${rect.right + window.scrollX - 40}px`;
+
+      croix.addEventListener("click", (e) => {
+        e.stopPropagation();
+        clic.style.transform = "scale(1)";
+        clic.style.zIndex = "1";
+        croix.remove();
+        activeClic = null;
+        activeCroix = null;
+      });
+      activeClic = clic;
+      activeCroix = croix;
+    });
+  });
+}
+handleClick();
 
 let moveArray = [...moves];
 // Animation du caroussel
