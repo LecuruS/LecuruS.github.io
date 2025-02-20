@@ -63,6 +63,8 @@
     .caroussel{
         position: relative;
         height: 300px;
+        max-width: 1500px;
+        margin: 0 auto;
         @media screen and (max-width:500px) {
             height: 200px;
         }

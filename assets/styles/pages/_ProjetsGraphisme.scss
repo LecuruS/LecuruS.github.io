@@ -1,28 +1,50 @@
 .Graphisme {
-    height: 2100px;
+    // height: 2100px;
     background-color: $color6;
+
+
 
     .top_line{
         height: 100px;
+        @media screen and (max-width:950px) {
+            height: 60px;
+        }
         background-color: $color6;
+        
     }
+    .flux {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    h3{
+        color: $color1;
+        font-size: 2.5rem;
+        @media screen and (max-width:768px) {
+            font-size: 1.8rem;
+        }
+    }
+   
     .logo_projets{
-        margin: 20px 0 20px 0;
+        margin: 20px 0 60px 0;
         border: 2px solid $color1;
         display: grid;
-        grid-template-columns: 25% 75%;
+        grid-template-columns: 20% 80%;
         align-items: center;
         justify-items: center;
+        @media screen and (max-width:1000px) {
+            display: flex;
+            flex-direction: column;    
+        };
         .partie1{
             padding: 20px 0 20px 0;
-            h3{
-                color: $color1;
-                font-size: 2.5rem;
-            }
 
         }
         .partie2{
             padding: 20px 40px 20px 40px;
+            @media screen and (max-width:950px) {
+                padding: 10px 20px 10px 20px;
+                
+            }
             background-color: #2c3968;
             display: flex;
             justify-content: space-evenly;
@@ -31,16 +53,13 @@
             img{
                 border: 1px solid $color2;
                 cursor: pointer;
-                width: 170px;
+                width: 15%;
                 padding: 10px;
-                @media screen and (max-width:1400px){
+                @media screen and (max-width:1200px){
                     width: 140px;
                 }
-                @media screen and (max-width:1200px){
-                    width: 130px;
-                }
-                @media screen and (max-width:900px){
-                    width: 120px;
+                @media screen and (max-width:768px){
+                    width: 100px;
                 }
                 
             }
@@ -48,14 +67,24 @@
     }
 
     .mockup_projets{
-        margin: 20px 0 20px 0;
+        margin: 20px 0 60px 0;
         display: grid;
-        grid-template-columns: 75% 25%;
+        grid-template-columns: 80% 20%;
         align-items: center;
         justify-items: center;
         border: 2px solid $color1;
+        @media screen and (max-width:1000px) {
+            display: flex;
+            flex-direction: column;   
+            .box:first-child { order: 2;}
+            .box:last-child { order: 1;} 
+        };
         .mock_part2{
             padding: 20px 40px 20px 40px;
+            @media screen and (max-width:950px) {
+                padding: 10px 20px 10px 20px;
+                
+            }
             background-color: #2c3968;
             display: flex;
             justify-content: space-around;
@@ -64,39 +93,46 @@
             width: 100%;
             img {
                 cursor: pointer;
-                width: 170px;
+                width: 15%;
                 padding: 10px;
                 border: 1px solid $color2;
+                
+                @media screen and (max-width:1000px) {
+                    width: 140px;
+             };
+                @media screen and (max-width:768px) {
+                    width: 100px;
+             };
             }
         }
         .mock_part1{
             padding: 20px 0 20px 0;
-            h3{
-                color: $color1;
-                font-size: 2.5rem;
-                
-            }
         }
     }
 
     .flyers_projets{
-        margin: 20px 0 20px 0;
+        margin: 20px 0 60px 0;
         display: grid;
-        grid-template-columns: 25% 75%;
+        grid-template-columns: 20% 80%;
         align-items: center;
         justify-items: center;
         border: 2px solid $color1;
+        @media screen and (max-width:1000px) {
+            display: flex;
+            flex-direction: column;    
+        };
         .flyers_part1{
             padding: 20px 0 20px 0;
-            h3{
-                color: $color1;
-                font-size: 2.5rem;
-            }
         }
         .flyers_part2{
             padding: 20px 40px 20px 40px;
+            @media screen and (max-width:950px) {
+                padding: 10px 20px 10px 20px;
+                
+            }
             background-color: #2c3968;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
             width: 100%;
@@ -106,6 +142,15 @@
                 cursor: pointer;
                 padding: 10px;
                 border: 1px solid $color2;
+                @media screen and (max-width:1300px) {
+                    height: 300px;
+             };
+                @media screen and (max-width:1000px) {
+                    height: 205px;
+             };
+                @media screen and (max-width:768px) {
+                    height: 150px;
+             };
             }
         }
     }
@@ -117,12 +162,22 @@
     .Projet_ecole {
         margin: 20px 0 20px 0;
         display: grid;
-        grid-template-columns: 75% 25%;
+        grid-template-columns: 80% 20%;
         align-items: center;
         justify-items: center;
         border: 2px solid $color1;
+        @media screen and (max-width:1000px) {
+            display: flex;
+            flex-direction: column;  
+            .ecole_box:first-child { order: 2;}
+            .ecole_box:last-child { order: 1;}  
+        };
         .ecole_part1{
             padding: 20px 40px 20px 40px;
+            @media screen and (max-width:950px) {
+                padding: 10px 20px 10px 20px;
+                
+            }
             background-color: #2c3968;
             display: flex;
             justify-content: space-around;
@@ -132,15 +187,23 @@
             img {
                 cursor: pointer;
                 height: 650px;
-                padding: 10px;
+                padding: 5px;
                 border: 1px solid $color2;
+                @media screen and (max-width:1300px) {
+                    height: 500px;
+             };
+                @media screen and (max-width:950px) {
+                       height: 325px;
+                };
+                @media screen and (max-width:768px) {
+                       height: 280px;
+                };
             }
         }
         .ecole_part2{
-            h3{
-                color: $color1;
-                font-size: 2.5rem;
-            }
+            padding: 20px 0 20px 0;
+            text-align: center;
+            
         }
     }
     .bot_line {

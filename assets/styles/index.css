@@ -489,6 +489,8 @@ footer .footer a {
 .projet-container .caroussel {
   position: relative;
   height: 300px;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 500px) {
   .projet-container .caroussel {
@@ -736,22 +738,22 @@ footer .footer a {
   }
 }
 .propos .about .monologue h3 {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: 800;
 }
 @media screen and (max-width: 900px) {
   .propos .about .monologue h3 {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
   }
 }
 @media screen and (max-width: 700px) {
   .propos .about .monologue h3 {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 500px) {
   .propos .about .monologue h3 {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 }
 .propos .about .monologue p {
@@ -924,24 +926,24 @@ h2 {
 }
 @media screen and (max-width: 900px) {
   h2 {
-    font-size: 1.5rem;
+    font-size: 2.1rem;
   }
 }
 @media screen and (max-width: 700px) {
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     padding: 20px;
   }
 }
 @media screen and (max-width: 500px) {
   h2 {
-    font-size: 1rem;
+    font-size: 1.6rem;
     padding: 15px;
   }
 }
 @media screen and (max-width: 400px) {
   h2 {
-    font-size: 0.9rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -1028,29 +1030,53 @@ h2 {
 }
 
 .Graphisme {
-  height: 2100px;
   background-color: #1A1423;
 }
 .Graphisme .top_line {
   height: 100px;
   background-color: #1A1423;
 }
+@media screen and (max-width: 950px) {
+  .Graphisme .top_line {
+    height: 60px;
+  }
+}
+.Graphisme .flux {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.Graphisme h3 {
+  color: whitesmoke;
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .Graphisme h3 {
+    font-size: 1.8rem;
+  }
+}
 .Graphisme .logo_projets {
-  margin: 20px 0 20px 0;
+  margin: 20px 0 60px 0;
   border: 2px solid whitesmoke;
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 20% 80%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
 }
+@media screen and (max-width: 1000px) {
+  .Graphisme .logo_projets {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .Graphisme .logo_projets .partie1 {
   padding: 20px 0 20px 0;
-}
-.Graphisme .logo_projets .partie1 h3 {
-  color: whitesmoke;
-  font-size: 2.5rem;
 }
 .Graphisme .logo_projets .partie2 {
   padding: 20px 40px 20px 40px;
@@ -1067,36 +1093,57 @@ h2 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media screen and (max-width: 950px) {
+  .Graphisme .logo_projets .partie2 {
+    padding: 10px 20px 10px 20px;
+  }
+}
 .Graphisme .logo_projets .partie2 img {
   border: 1px solid #EACDC2;
   cursor: pointer;
-  width: 170px;
+  width: 15%;
   padding: 10px;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   .Graphisme .logo_projets .partie2 img {
     width: 140px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   .Graphisme .logo_projets .partie2 img {
-    width: 130px;
-  }
-}
-@media screen and (max-width: 900px) {
-  .Graphisme .logo_projets .partie2 img {
-    width: 120px;
+    width: 100px;
   }
 }
 .Graphisme .mockup_projets {
-  margin: 20px 0 20px 0;
+  margin: 20px 0 60px 0;
   display: grid;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 80% 20%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
   border: 2px solid whitesmoke;
+}
+@media screen and (max-width: 1000px) {
+  .Graphisme .mockup_projets {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Graphisme .mockup_projets .box:first-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .Graphisme .mockup_projets .box:last-child {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 .Graphisme .mockup_projets .mock_part2 {
   padding: 20px 40px 20px 40px;
@@ -1113,35 +1160,53 @@ h2 {
       flex-wrap: wrap;
   width: 100%;
 }
+@media screen and (max-width: 950px) {
+  .Graphisme .mockup_projets .mock_part2 {
+    padding: 10px 20px 10px 20px;
+  }
+}
 .Graphisme .mockup_projets .mock_part2 img {
   cursor: pointer;
-  width: 170px;
+  width: 15%;
   padding: 10px;
   border: 1px solid #EACDC2;
+}
+@media screen and (max-width: 1000px) {
+  .Graphisme .mockup_projets .mock_part2 img {
+    width: 140px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Graphisme .mockup_projets .mock_part2 img {
+    width: 100px;
+  }
 }
 .Graphisme .mockup_projets .mock_part1 {
   padding: 20px 0 20px 0;
 }
-.Graphisme .mockup_projets .mock_part1 h3 {
-  color: whitesmoke;
-  font-size: 2.5rem;
-}
 .Graphisme .flyers_projets {
-  margin: 20px 0 20px 0;
+  margin: 20px 0 60px 0;
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 20% 80%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
   border: 2px solid whitesmoke;
 }
+@media screen and (max-width: 1000px) {
+  .Graphisme .flyers_projets {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .Graphisme .flyers_projets .flyers_part1 {
   padding: 20px 0 20px 0;
-}
-.Graphisme .flyers_projets .flyers_part1 h3 {
-  color: whitesmoke;
-  font-size: 2.5rem;
 }
 .Graphisme .flyers_projets .flyers_part2 {
   padding: 20px 40px 20px 40px;
@@ -1149,6 +1214,8 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -1156,11 +1223,31 @@ h2 {
           align-items: center;
   width: 100%;
 }
+@media screen and (max-width: 950px) {
+  .Graphisme .flyers_projets .flyers_part2 {
+    padding: 10px 20px 10px 20px;
+  }
+}
 .Graphisme .flyers_projets .flyers_part2 img {
   height: 350px;
   cursor: pointer;
   padding: 10px;
   border: 1px solid #EACDC2;
+}
+@media screen and (max-width: 1300px) {
+  .Graphisme .flyers_projets .flyers_part2 img {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .Graphisme .flyers_projets .flyers_part2 img {
+    height: 205px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Graphisme .flyers_projets .flyers_part2 img {
+    height: 150px;
+  }
 }
 .Graphisme .clic_scale {
   position: relative;
@@ -1168,12 +1255,33 @@ h2 {
 .Graphisme .Projet_ecole {
   margin: 20px 0 20px 0;
   display: grid;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 80% 20%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
   border: 2px solid whitesmoke;
+}
+@media screen and (max-width: 1000px) {
+  .Graphisme .Projet_ecole {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Graphisme .Projet_ecole .ecole_box:first-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .Graphisme .Projet_ecole .ecole_box:last-child {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 .Graphisme .Projet_ecole .ecole_part1 {
   padding: 20px 40px 20px 40px;
@@ -1190,15 +1298,35 @@ h2 {
       flex-wrap: wrap;
   width: 100%;
 }
+@media screen and (max-width: 950px) {
+  .Graphisme .Projet_ecole .ecole_part1 {
+    padding: 10px 20px 10px 20px;
+  }
+}
 .Graphisme .Projet_ecole .ecole_part1 img {
   cursor: pointer;
   height: 650px;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid #EACDC2;
 }
-.Graphisme .Projet_ecole .ecole_part2 h3 {
-  color: whitesmoke;
-  font-size: 2.5rem;
+@media screen and (max-width: 1300px) {
+  .Graphisme .Projet_ecole .ecole_part1 img {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .Graphisme .Projet_ecole .ecole_part1 img {
+    height: 325px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Graphisme .Projet_ecole .ecole_part1 img {
+    height: 280px;
+  }
+}
+.Graphisme .Projet_ecole .ecole_part2 {
+  padding: 20px 0 20px 0;
+  text-align: center;
 }
 .Graphisme .bot_line {
   height: 100px;
