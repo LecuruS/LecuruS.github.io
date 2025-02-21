@@ -62,7 +62,7 @@ function handleClick() {
       }
 
       clic.style.transform = "scale(2.5)";
-      clic.style.zIndex = "1000";
+      clic.style.zIndex = "10";
       let croix = document.createElement("span");
       croix.innerHTML = "&#x274C;";
       croix.classList.add("close");

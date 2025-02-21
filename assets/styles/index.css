@@ -813,7 +813,7 @@ nav {
   font-family: nunito;
   color: whitesmoke;
   position: fixed;
-  z-index: 1;
+  z-index: 11;
 }
 @media screen and (max-width: 400px) {
   nav {
